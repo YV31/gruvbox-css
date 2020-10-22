@@ -1,10 +1,63 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="author" content="YV31">
+    <meta name="description" content="Gruvbox for css.">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="nerdfont.css">
+    <link rel="stylesheet" href="themes/gruvbox-dark.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        height: 100%
+      }
+
+      body {
+        font-family: 'Fira Code';
+        background: var(--bg_h);
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      a {
+        color: var(--fg);
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        transition:  color 0.8s
+      }
+
+      #dark:hover {
+        color: var(--blue);
+      }
+
+      #light:hover {
+        color: var(--red);
+      }
+
+      .massive {
+        font-size: 5em;
+      }
+    </style>
   </head>
   <body>
-    <ul>
-      <li><a target="_blank" href="gruvbox-dark.html">Dark</a></li>
-      <li><a target="_blank" href="gruvbox-light.html">Light</a></li>
-    </ul>
+
+      <a target="_blank" href="gruvbox-dark.html" id="dark">
+        <i class="nf nf-weather-moon_alt_new massive"></i>&numsp;Dark
+      </a>
+
+      <a target="_blank" href="gruvbox-light.html" id="light">
+        <i class="nf nf-fa-sun_o massive"></i>&numsp;Light
+      </a>
+
   </body>
 </html>
